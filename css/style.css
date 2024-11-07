@@ -1,3 +1,8 @@
+:root {
+    --main-color: #6dbb09;
+    --color-white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +12,19 @@
     outline: none;
     border: none;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 3% 25%, #dcfab4 0, var(--color-white) 25%);
 }
 
 header {
@@ -22,7 +40,7 @@ header a {
 }
 
 header svg:hover {
-    border: 1px solid #6dbb09;
+    border: 1px solid var(--main-color);
 }
 
 header svg {
@@ -34,19 +52,6 @@ header svg {
 img {
     max-width: 100%;
     display: block;
-}
-
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: "Noto Sans", sans-serif;
-    margin: 20px;
-    margin: 0;
-    padding: 0;
-    background: radial-gradient(circle at 3% 25%, #dcfab4 0, #ffffff 25%);
 }
 
 .s-hero {
@@ -105,13 +110,13 @@ body {
 }
 
 h1 {
-    color: #6dbb09;
+    color: var(--main-color);
     font-size: 5.8rem;
     margin-bottom: 40px;
 }
 
 b {
-    color: #6dbb09;
+    color: var(--main-color);
 }
 
 h2 {
@@ -152,7 +157,7 @@ h2 {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--color-white);
     border: 1px solid #ebebeb;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -191,8 +196,8 @@ input {
 
 button {
     padding: 10px;
-    background-color: #6dbb09;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--color-white);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -210,7 +215,8 @@ button:hover {
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.8rem;
-    color: #6dbb09;
+    color: var(--main-color);
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -224,9 +230,10 @@ button:hover {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
         text-align: center;
         margin-top: 7rem;
+        line-height: 105%;
     }
 
     .d-flex {
