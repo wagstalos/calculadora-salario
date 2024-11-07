@@ -9,6 +9,28 @@
     box-sizing: border-box;
 }
 
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+header a {
+    margin-left: 8px;
+}
+
+header svg:hover {
+    border: 1px solid #6dbb09;
+}
+
+header svg {
+    padding: 4px;
+    border: 1px solid rgb(173, 172, 172);
+    border-radius: 24px;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -204,7 +226,7 @@ button:hover {
     h1 {
         font-size: 4rem;
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
 
     .d-flex {
