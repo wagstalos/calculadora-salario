@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Calculadora de Idade x Salário</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <section class="s-hero">
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <img src="img/Vault.png" class="cofre" alt="dinheiro" width="250">
+            <img src="img/Coin.png" class="coin" alt="coin" width="350">
+            <div class="d-flex">
+                <div class="text">
+                    <h1>Multiplique o valor do seu futuro!</h1>
+                    <p class="description">Imagine que existe uma <b>fórmula simples</b> para entender o impacto de suas
+                        finanças pessoais e a
+                        importância de poupar. Pegue sua idade, multiplique pelo seu salário anual, e divida por 10.
+                        Esse número representa uma ideia do quanto você poderia já ter acumulado.</p>
+                    <p class="description">Quanto mais cedo você começar a poupar e investir uma parte do que ganha,
+                        mais cedo verá esse número crescer. Essa é a mágica do tempo e do <b>planejamento financeiro</b>
+                        . Não
+                        se trata apenas de guardar dinheiro trata-se de garantir que você terá opções e estabilidade no
+                        futuro.</p>
+
+                </div>
+                <div class="calc">
+                    <div class="box">
+                        <img src="img/card.png" alt="">
+                        <h2>Calculadora de Idade x Salário</h2>
+                        <p class="box-description">fonte: Econoweek </p>
+
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" placeholder="Digite sua idade">
+
+                        <label for="salario">Salário Anual: <small>(Ex. R$50.000,00)</small> </label>
+                        <input type="text" id="salario" placeholder="Digite seu salário anual"
+                            oninput="formatarSalario(this)">
+
+                        <button onclick="calcular()">Calcular</button>
+
+                        <div id="resultado" class="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

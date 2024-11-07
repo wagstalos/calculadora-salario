@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 3% 25%, #dcfab4 0, #ffffff 25%);
+}
+
+.s-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.lines {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line {
+    position: relative;
+    width: 1px;
+    background-color: #eeeeee;
+    height: 100%;
+    z-index: 0;
+}
+
+.cofre {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 2;
+    animation: moverCofre 4s ease-in-out infinite;
+}
+
+.coin {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes moverCofre {
+    0% {
+        top: 0;
+        filter: blur(0);
+    }
+
+    50% {
+        top: 20px;
+        filter: blur(3px);
+    }
+
+    100% {
+        top: 0;
+        filter: blur(0);
+    }
+}
+
+h1 {
+    color: #6dbb09;
+    font-size: 5.8rem;
+    margin-bottom: 40px;
+}
+
+b {
+    color: #6dbb09;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.description {
+    font-size: 1.6rem;
+    color: #373737;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 124.6rem;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.text {
+    width: 50%;
+}
+
+.calc {
+    width: 384px;
+}
+
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    font-size: 1.6rem;
+}
+
+.box img {
+    max-width: 300px;
+
+    margin: 0 auto;
+    margin-top: -53px;
+    margin-bottom: 30px;
+}
+
+.box-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #878484;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 50px;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: #6dbb09;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 48px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+button:hover {
+    background-color: #67b107;
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #6dbb09;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cofre, .coin {
+        display: none;
+    }
+
+    .s-hero {
+        align-items: normal;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .calc {
+        margin-top: 50px;
+    }
+
+    .box {
+        margin-bottom: 50px;
+    }
+}
