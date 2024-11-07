@@ -10,7 +10,7 @@ function calcular() {
     const salario = parseFloat(salarioText.replace(/[^\d]/g, ''));
 
     if (!isNaN(idade) && !isNaN(salario)) {
-        const salarioReais = salario / 100;
+        const salarioReais = (salario / 100)*12;
         const resultado = (idade * salarioReais) / 10;
         const resultadoFormatado = resultado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         document.getElementById("resultado").innerText = `Resultado: ${resultadoFormatado}`;
